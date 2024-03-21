@@ -1,0 +1,67 @@
+* {
+    font-size: 14pt;
+    font-family: Arial, sans-serif;
+}
+
+.page {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.form {
+    max-width: 800px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.form__fields {
+    border: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.form__input {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.form__text-area {
+    width: 100%;
+    margin: 10px 0;
+    height: 150px;
+    resize: none;
+}
+
+.form__submit-button {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #eeeeee;
+    border: 1px solid gray;
+    margin: 10px 0;
+}
+
+.user-not-found {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 50px;
+    text-align: center;
+}
+
+.user-not-found__message {
+    font-size: 24px;
+    margin: 0 auto 20px;
+}
+
+.form-success {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 50px;
+    text-align: center;
+}
+
+.form-success__message {
+    font-size: 24px;
+    margin: 0 auto 20px;
+}

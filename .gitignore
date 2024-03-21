@@ -1,0 +1,4 @@
+.DS_Store
+build/
+indent.log
+.php-cs-fixer.cache

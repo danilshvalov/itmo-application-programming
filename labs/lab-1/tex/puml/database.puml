@@ -1,0 +1,49 @@
+@startuml
+
+hide circle
+left to right direction
+skinparam roundcorner 0
+skinparam shadowing false
+skinparam linetype ortho
+skinparam FontSize 18
+skinparam defaultFontName JetBrains Mono
+scale 2
+
+skinparam class {
+    BackgroundColor white
+    BorderThickness 1.0
+    FontStyle bold
+}
+
+!procedure column($name, $name_size, $type, $type_size, $constraints="")
+    !while %strlen($name) < $name_size
+        !$name = $name + " "
+    !endwhile
+    !while %strlen($type) < $type_size
+        !$type = $type + " "
+    !endwhile
+    $name  $type  $constraints
+!endprocedure
+
+entity user_account {
+    column(id,       8, TEXT, 4, PK)
+    --
+    column(login,    8, TEXT, 4, "UQ NN")
+    column(password, 8, TEXT, 4, NN)
+}
+
+entity data {
+    column(user_id, 7, TEXT,    7, PK)
+    column(date,    7, TEXT,    7, PK)
+    column(time,    7, TEXT,    7, PK)
+    --
+    column(field1,  7, FLOAT,   7, NN)
+    column(field2,  7, FLOAT,   7, NN)
+    column(field3,  7, FLOAT,   7, NN)
+    column(field4,  7, FLOAT,   7, NN)
+    column(field5,  7, INTEGER, 7, NN)
+}
+
+user_account ||---o{ data
+
+@enduml
