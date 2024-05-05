@@ -2,3 +2,7 @@
 build/
 indent.log
 .php-cs-fixer.cache
+.cache/
+bin/
+obj/
+.vs/

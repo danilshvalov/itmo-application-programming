@@ -1,0 +1,9 @@
+{
+    "version": 4,
+    "vendor": {
+        "conan": {}
+    },
+    "include": [
+        "/Users/danilshvalov/projects/application-programming/labs/lab-4/code/build/Release/generators/CMakePresets.json"
+    ]
+}

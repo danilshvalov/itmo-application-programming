@@ -1,0 +1,15 @@
+[requires]
+boost/1.84.0
+qt/6.7.0
+openssl/3.2.1
+
+[options]
+qt/*:shared=True
+
+[generators]
+CMakeDeps
+CMakeToolchain
+
+[layout]
+cmake_layout
+
